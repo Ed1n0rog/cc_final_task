@@ -4,3 +4,21 @@
 лучше обойтись исключительно массивами.
 */
 
+string[] stringArray = {"hello", "123", "string", "hi"};
+string[] newStringArray;
+int a = 0;
+newStringArray = new string[10];
+
+for (int i = 0; i < stringArray.Length; i++)
+{
+    if (stringArray[i].Length <= 3)
+    {
+        newStringArray[a] = stringArray[i];
+        a++;
+    }
+}
+
+for (int j = 0; j < newStringArray.Length; j++)
+{
+    Console.Write($"{newStringArray[j]} ");
+}
